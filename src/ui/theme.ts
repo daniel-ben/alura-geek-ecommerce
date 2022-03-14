@@ -6,6 +6,10 @@ export const theme = {
       400: '#2A7AE4',
     }
   },
+  breakpoints: {
+    sm: '576px',
+    md: '768px',
+  },
   fonts: {
     global: `
       font-family: Raleway;
@@ -13,27 +17,25 @@ export const theme = {
       letter-spacing: 0em;
       text-align: left;
     `,
-    title: {
-      desktop: `
-        font-weight: 700;
-        font-size: 52px;
-        line-height: 61px;     
-      `,
-      mobile: `
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 26px;     
-      `,
-    },
-    body: {
-      sm: `
-        font-size: 14px;
-        line-height: 16px;
-      `,
-      md: `
-        font-size: 16px;
-        line-height: 19px;
-      `,
-    },
-  }
+    xs: `
+      font-size: 14px;
+      line-height: 16px;
+    `,
+    sm: `
+      font-size: 16px;
+      line-height: 19px;
+    `,
+    md: `
+      font-size: 22px;
+      line-height: 26px;
+    `,
+    lg: `
+      font-size: 22px;
+      line-height: 38px;
+    `,
+    xl: `
+      font-size: 52px;
+      line-height: 61px;
+    `,
+  },
 }

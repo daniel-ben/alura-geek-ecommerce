@@ -3,9 +3,9 @@ import { theme } from '@ui/theme';
 
 export const BaseButton = styled.button`
   padding: 12px 16px;
-  color: white;
-  ${theme.fonts.body.sm};
+  ${theme.fonts.xs};
   font-weight: 600;
+  color: white;
 
   &:hover {
     border: 1px solid #2A7AE4;
@@ -14,7 +14,7 @@ export const BaseButton = styled.button`
 
   @media (min-width: 768px) {
     padding: 16px;
-    ${theme.fonts.body.md};
+    ${theme.fonts.sm};
     font-weight: 400;
   }
 `;

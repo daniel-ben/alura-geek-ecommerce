@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import { Title, Subtitle, PrimaryButton } from '@ui/components'
+import { PrimaryButton } from '@ui/components'
+import { Title, Subtitle } from './Typography'
 import { theme } from '@ui/theme'
 
 const BannerContainer = styled.section`
@@ -26,21 +27,13 @@ const BannerContainer = styled.section`
   }
 `
 
-const BannerInfo = styled.div`
-
-`
-
-const BannerButton = styled(PrimaryButton)`
-  width: fit-content;
-`
-
 export default function Banner() {
 
   return (
     <BannerContainer>
       <Title>Dezembro Promocional</Title>
       <Subtitle>Produtos selecionados com até 33% de desconto</Subtitle>
-      <BannerButton>Ver Consoles</BannerButton>
+      <PrimaryButton>Ver Consoles</PrimaryButton>
     </BannerContainer>
   )
 }

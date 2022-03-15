@@ -6,7 +6,7 @@ export const Title = styled.h1`
   font-weight: 700;
   color: white;
   
-  @media (min-width: ${theme.breakpoints.md}) {
+  @media (min-width: ${theme.breakpoints.sm}) {
     ${theme.fonts.xl}
   }
 `

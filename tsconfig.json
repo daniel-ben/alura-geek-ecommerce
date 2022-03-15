@@ -3,6 +3,7 @@
     "baseUrl": ".",
     "paths": {
       "@ui/*": ["src/ui/*"],
+      "@features/*": ["src/features/*"],
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],

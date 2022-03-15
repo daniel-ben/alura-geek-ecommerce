@@ -1,7 +1,2 @@
-import { Title } from "./Title";
-import { Subtitle } from "./Subtitle";
-
-export { 
-  Title, 
-  Subtitle, 
-};
+export { Title } from "./Title";
+export { Subtitle } from "./Subtitle";

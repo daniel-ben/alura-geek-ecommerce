@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import styled from 'styled-components'
-import { PrimaryButton, SecondaryButton, Title } from '@ui/index'
+import { PrimaryButton, SecondaryButton, Title, Subtitle } from '@ui/index'
 
 const Teste = styled.div`
   background-color: lightblue;
@@ -12,6 +12,7 @@ const Home: NextPage = () => {
       <PrimaryButton>Hellow</PrimaryButton>
       <SecondaryButton>Hello 2</SecondaryButton>
       <Title>Dezembro Promocional</Title>
+      <Subtitle>Produtos selecionados com até 33% de desconto</Subtitle>
     </Teste>
   )
 }

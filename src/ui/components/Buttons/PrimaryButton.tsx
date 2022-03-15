@@ -6,7 +6,7 @@ export const PrimaryButton = styled(BaseButton)`
   background-color: ${theme.colors.primary[400]};
 
   &:hover {
-    background-color: transparent;
+    background-color: ${theme.colors.primary[300]};
   }
 `;
 

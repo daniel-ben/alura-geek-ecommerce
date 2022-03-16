@@ -2,7 +2,6 @@ import type { NextPage } from 'next'
 
 import styled from 'styled-components'
 import { theme } from '@ui/theme'
-import Footer from '@ui/Footer'
 import Banner from '@features/banner'
 import ProductList from '@features/products/product-list'
 
@@ -23,18 +22,6 @@ const Body = styled.div`
   }
 `
 
-const Signature = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  padding: 32px 0;
-`
-
-const SignatureText = styled.p`
-  ${theme.fonts.sm}
-  font-weight: 500;
-`
 
 const Home: NextPage = () => {
   return (
@@ -45,13 +32,6 @@ const Home: NextPage = () => {
         <ProductList title="Consoles" link="#"/>
         <ProductList title="Diversos" link="#"/>
       </Body>
-
-      <Footer />
-
-      <Signature>
-        <SignatureText>Desenvolvido por Daniel Ben</SignatureText>
-        <SignatureText>2022</SignatureText>
-      </Signature>
     </>
   )
 }

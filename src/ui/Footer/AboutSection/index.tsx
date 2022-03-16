@@ -1,7 +1,7 @@
 import { StyledList, StyledItem } from './style'
-import { Logo } from '@ui/components'
+import { FooterLogo } from '../FooterLogo'
 
-export default function AboutSection() {
+export function AboutSection() {
   const list: string[] = [
     'Quem somos nós',
     'Política de privacidade',
@@ -13,7 +13,7 @@ export default function AboutSection() {
 
   return (
     <StyledList>
-      <Logo/>
+      <FooterLogo />
       {list.map((item, index) => <StyledItem key={index}>{item}</StyledItem>)}
     </StyledList>
   )

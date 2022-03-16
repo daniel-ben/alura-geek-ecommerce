@@ -9,7 +9,7 @@ import { PrimaryButton } from '@ui/components'
 
 
 
-export default function ContactForm() {
+export function ContactForm() {
 
   return (
     <StyledForm>

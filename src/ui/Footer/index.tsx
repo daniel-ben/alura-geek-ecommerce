@@ -1,15 +1,19 @@
 import { StyledFooter } from './style'
-import { Logo } from '@ui/components'
-import ContactForm from './ContactForm'
-import AboutSection from './AboutSection'
+import { ContactForm } from './ContactForm'
+import { AboutSection } from './AboutSection'
+import { Signature } from './Signature'
+import { FooterLogo } from './FooterLogo'
 
-export default function Footer() {
+export function Footer() {
 
   return (
-    <StyledFooter>
-      <Logo/>
-      <AboutSection />
-      <ContactForm />
-    </StyledFooter>
+    <>
+      <StyledFooter>
+        <FooterLogo />
+        <AboutSection />
+        <ContactForm />
+      </StyledFooter>
+      <Signature />
+    </>
   )
 }

@@ -39,7 +39,7 @@ export default function Header() {
   return (
     <StyledHeader>
       <LogoAndSearchBarContainer>
-        <Logo />
+        <Logo variant='header'/>
         <SearchBar />
       </LogoAndSearchBarContainer>
 

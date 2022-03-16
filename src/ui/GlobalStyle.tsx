@@ -1,12 +1,12 @@
 import { createGlobalStyle } from 'styled-components'
 import { theme } from '@ui/theme'
 
-
 export const GlobalStyle = createGlobalStyle`
   html,
-  body {
+  body, input, textarea, button {
     padding: 0;
     margin: 0;
+    ${theme.fonts.global}
   }
 
   a {
@@ -20,6 +20,5 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
 
-    ${theme.fonts.global}
   }
 `;

@@ -13,7 +13,7 @@ export const BaseButton = styled.button`
   font-weight: 600;
   color: white;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${theme.breakpoints.md}) {
     padding: 16px;
     ${theme.fonts.sm};
     font-weight: 400;

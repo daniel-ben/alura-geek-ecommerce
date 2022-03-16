@@ -7,9 +7,9 @@ const BannerContainer = styled.section`
   width: 100vw;
   height: 192px;
   padding: 16px;
-  background-image: url('/banner.png');
+  background-image: url('/images/banner.png');
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   background-position: center;
 
   display: flex;

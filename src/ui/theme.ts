@@ -1,23 +1,26 @@
+
 export const theme = {
   colors: {
     primary: {
-      100: '#D4E4FA',
+      100: '#EAF2FD',
+      200: '#D4E4FA',
       300: '#5595E9',
       400: '#2A7AE4',
     },
     neutral: {
       100: '#F5F5F5',
+      300: '#C8C8C8',
       400: '#A2A2A2',
       800: '#464646',
     }
   },
   breakpoints: {
     sm: '576px',
-    md: '768px',
+    md: '820px',
   },
   fonts: {
     global: `
-      font-family: Raleway;
+      font-family: 'Raleway', sans-serif;
       font-style: normal;
       letter-spacing: 0em;
       text-align: left;

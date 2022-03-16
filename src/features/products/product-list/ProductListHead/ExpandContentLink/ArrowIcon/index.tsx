@@ -17,7 +17,7 @@ export const ArrowIcon = function() {
 return (
   <ArrowIconContainer>
     <NextImage
-      src="/arrow.svg"
+      src="/images/arrow.svg"
       alt="arrow icon"
       layout="fill"
     />

@@ -6,6 +6,7 @@ import {
 } from './styles'
 import { ExpandListLink } from './ExpandListLink'
 import { Product } from "./Product"
+import { products } from './products.list'
 
 export default function ProductList(props: {title: string, link: string}) {
 
@@ -17,12 +18,8 @@ export default function ProductList(props: {title: string, link: string}) {
       </StyledHeader>
 
       <StyledProductList>
-        <Product link="#" img="/images/star-wars.png"/>
-        <Product link="#" img="/images/star-wars.png"/>
-        <Product link="#" img="/images/star-wars.png"/>
-        <Product link="#" img="/images/star-wars.png"/>
-        <Product link="#" img="/images/star-wars.png"/>
-        <Product link="#" img="/images/star-wars.png"/>
+        {products.map(product => <Product key={product.id} product={product} />)}
+        
       </StyledProductList>
     </StyledContainer>
   )

@@ -1,0 +1,58 @@
+import { Product } from './Product/product.type'
+
+export const products: readonly Product[] = [
+  {
+    id: 1,
+    category: 'Star Wars',
+    image: '/images/products-images/caneca-storm-trooper.png',
+    alt: 'Imagem de uma caneca no formato do capacete de Storm Trooper',
+    name: 'Caneca Storm Trooper',
+    price: 'R$ 60,00',
+    link: '',
+  },
+  {
+    id: 2,
+    category: 'Star Wars',
+    image: '/images/products-images/lego-star-wars.png',
+    alt: 'Imagem com duas peças de lego da Star Wars',
+    name: 'Lego Star Wars',
+    price: 'R$ 60,00',
+    link: '',
+  },
+  {
+    id: 3,
+    category: 'Star Wars',
+    image: '/images/products-images/yoda-figure.png',
+    alt: 'Imagem com um boneco do yoda',
+    name: 'Yoda Action Figure',
+    price: 'R$ 60,00',
+    link: '',
+  },
+  {
+    id: 4,
+    category: 'Star Wars',
+    image: '/images/products-images/storm-trooper-figure.png',
+    alt: 'Imagem com um boneco de um Storm Trooper',
+    name: 'Storm Trooper Action Figure',
+    price: 'R$ 60,00',
+    link: '',
+  },
+  {
+    id: 5,
+    category: 'Star Wars',
+    image: '/images/products-images/boneco-baby-yoda.png',
+    alt: 'Imagem de um boneco do Baby Yoda',
+    name: 'Boneco Baby Yoda',
+    price: 'R$ 60,00',
+    link: '',
+  },
+  {
+    id: 6,
+    category: 'Star Wars',
+    image: '/images/products-images/kylo-figure.png',
+    alt: 'Imagem de um boneco do Kylo Ren',
+    name: 'Kylo Ren Action Figure',
+    price: 'R$ 60,00',
+    link: '',
+  },
+]

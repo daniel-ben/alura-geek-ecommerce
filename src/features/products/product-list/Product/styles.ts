@@ -2,12 +2,27 @@ import styled from "styled-components";
 import { theme } from '@ui/theme'
 
 export const StyledContainer = styled.li`
-display: flex;
-flex-direction: column;
-gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 
-min-width: 150px;
-max-width: 176px;
+  min-width: 130px;
+  width: 48%;
+  max-width: 176px;
+
+
+  // maxWidth * 2 = 352
+  // minWidth * 3 = 420
+  // get rid of the blanck space as the screen goes bigger on mobile
+  @media (min-width: 451px) {
+    width: 30%;
+  }
+`
+
+export const ProductImageContainer = styled.div`
+  position: relative;
+  height: 174px;
+  width: 100%;
 `
 
 export const ProductName = styled.p`

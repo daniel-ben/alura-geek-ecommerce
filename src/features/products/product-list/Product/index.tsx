@@ -1,25 +1,27 @@
 import NextImage from "next/image";
 import { 
   StyledContainer, 
+  ProductImageContainer,
   ProductName, 
   Price, 
   Link 
 } from "./styles";
+import { ProductType } from "./product.type"
 
-
-export function Product(props: {link: string, img: string}) {
+export function Product(props: {product: ProductType}) {
 
   return (
     <StyledContainer>
-      <NextImage 
-        src={props.img}
-        alt="Product Image"
-        height={174}
-        width={174}
-      />
-      <ProductName>Product XYZ</ProductName>
-      <Price>R$ 60,00</Price>
-      <Link as="a" href={props.link}>Ver produto</Link>
+      <ProductImageContainer>
+        <NextImage 
+          src={props.product.image}
+          alt={props.product.alt}
+          layout="fill"
+        />
+      </ProductImageContainer>
+      <ProductName>{props.product.name}</ProductName>
+      <Price>R$ {props.product.price}</Price>
+      <Link as="a" href={props.product.link}>Ver produto</Link>
     </StyledContainer>
   )
 }

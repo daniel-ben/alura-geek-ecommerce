@@ -1,6 +1,6 @@
-import { Product } from './Product/product.type'
+import { ProductType } from './Product/product.type'
 
-export const products: readonly Product[] = [
+export const products: readonly ProductType[] = [
   {
     id: 1,
     category: 'Star Wars',

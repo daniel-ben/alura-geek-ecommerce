@@ -24,6 +24,7 @@ export default class MyDocument extends Document {
       <html>
         <Head>
           {/* Step 5: Output the styles in the head  */}
+          <link href="https://fonts.googleapis.com/css2?family=Raleway&display=optional" rel="stylesheet" />
           {this.props.styleTags}
         </Head>
         <body>

@@ -2,7 +2,7 @@ import {
   StyledHeader, 
   LogoAndSearchBarContainer, 
   LoginButton, 
-} from './style';
+} from './styles';
 import { HeaderLogo } from './HeaderLogo';
 import { SearchBar } from "./SearchBar";
 import { SearchButton } from "./SearchButton";

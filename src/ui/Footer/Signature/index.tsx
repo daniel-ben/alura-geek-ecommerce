@@ -1,4 +1,4 @@
-import { StyledSection, StyledText} from './style'
+import { StyledSection, StyledText} from './styles'
 
 export function Signature() {
   return (

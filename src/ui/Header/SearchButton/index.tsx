@@ -1,4 +1,4 @@
-import { StyledIconContainer } from "./style"
+import { StyledIconContainer } from "./styles"
 import { SearchIcon } from "../SearchIcon"
 
 export function SearchButton () {

@@ -4,10 +4,8 @@ import {
   StyledInput, 
   StyledInputLabel, 
   StyledTextarea,
-} from './style'
+} from './styles'
 import { PrimaryButton } from '@ui/components'
-
-
 
 export function ContactForm() {
 

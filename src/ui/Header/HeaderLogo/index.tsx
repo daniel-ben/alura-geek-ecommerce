@@ -1,10 +1,14 @@
-import  { HeaderLogoContainer } from './style';
-import { Logo } from "@ui/components"
+import NextImage from 'next/image';
+import  { HeaderLogoContainer } from './styles';
 
 export function HeaderLogo() {
   return (
     <HeaderLogoContainer>
-      <Logo />
+      <NextImage 
+        src={"/images/Logo.svg"} 
+        alt="logo" 
+        layout='fill'
+      />
     </HeaderLogoContainer>
   )
 }

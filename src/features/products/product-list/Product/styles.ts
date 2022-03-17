@@ -1,5 +1,14 @@
-import styled from "styled-components"
-import { theme } from "@ui/theme"
+import styled from "styled-components";
+import { theme } from '@ui/theme'
+
+export const StyledContainer = styled.li`
+display: flex;
+flex-direction: column;
+gap: 8px;
+
+min-width: 150px;
+max-width: 176px;
+`
 
 export const ProductName = styled.p`
 ${theme.fonts.xs};

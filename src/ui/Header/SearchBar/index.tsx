@@ -1,4 +1,4 @@
-import { StyledContainer, StyledInput } from "./style"
+import { StyledContainer, StyledInput } from "./styles"
 import { SearchIcon } from "../SearchIcon";
 
 export const SearchBar = function() {

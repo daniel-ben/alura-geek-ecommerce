@@ -1,8 +1,8 @@
-import { StyledList, StyledItem } from './style'
+import { StyledList, StyledItem } from './styles'
 import { FooterLogo } from '../FooterLogo'
 
 export function AboutSection() {
-  const list: string[] = [
+  const list: readonly string[] = [
     'Quem somos nós',
     'Política de privacidade',
     'Programa fidelidade',

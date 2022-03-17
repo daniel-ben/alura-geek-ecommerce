@@ -1,4 +1,4 @@
-import { StyledFooter } from './style'
+import { StyledFooter } from './styles'
 import { ContactForm } from './ContactForm'
 import { AboutSection } from './AboutSection'
 import { Signature } from './Signature'

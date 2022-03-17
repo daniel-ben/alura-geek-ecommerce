@@ -1,11 +1,15 @@
-import { Logo } from '@ui/components'
-import { FooterLogoContainer } from './style'
+import NextImage from 'next/image'
+import { FooterLogoContainer } from './styles'
 
 export function FooterLogo() {
 
   return (
     <FooterLogoContainer>
-      <Logo />
+      <NextImage 
+        src={"/images/Logo.svg"} 
+        alt="logo" 
+        layout='fill'
+      />
     </FooterLogoContainer>
   )
 }

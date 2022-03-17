@@ -2,7 +2,7 @@ import { PrimaryButton } from '@ui/components'
 import { StyledContainer, StyledTitle, StyledSubtitle } from './styles'
 
 
-export default function Banner() {
+export function Banner() {
 
   return (
     <StyledContainer>

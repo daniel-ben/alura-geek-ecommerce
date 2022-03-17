@@ -9,6 +9,7 @@ export const theme = {
     },
     neutral: {
       100: '#F5F5F5',
+      200: '#E5E5E5',
       300: '#C8C8C8',
       400: '#A2A2A2',
       800: '#464646',

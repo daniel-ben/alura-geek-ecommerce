@@ -1,23 +1,19 @@
 import styled from 'styled-components'
 import { theme } from '@ui/theme'
 
-export const StyledForm = styled.form`
+export const StyledBody = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  width: 100%;
+  gap: 32px;
+  padding: 16px;
 
   @media (min-width: ${theme.breakpoints.sm}) {
-    flex-grow: 1;
-    width: auto;
+    gap: 64px;
+    padding: 32px;
   }
 
   @media (min-width: ${theme.breakpoints.md}) {
-    max-width: 50%;
+    gap: 32px;
+    padding: 64px 10%;
   }
-`
-
-export const StyledFormLabel = styled.p`
-  ${theme.fonts.sm}
-  font-weight: 700;
 `

@@ -1,26 +1,22 @@
 import { 
   StyledForm, 
   StyledFormLabel, 
-  StyledInput, 
-  StyledInputLabel, 
-  StyledTextarea,
 } from './styles'
-import { PrimaryButton } from '@ui/components'
+import { 
+  PrimaryButton, 
+  StyledInputWithLabel, 
+  StyledTextarea 
+} from '@ui/components'
 
 export function ContactForm() {
 
   return (
     <StyledForm>
       <StyledFormLabel>Fale conosco</StyledFormLabel>
-      <StyledInputLabel>
-        Nome
-        <StyledInput required />
-      </StyledInputLabel>
-      <StyledTextarea
-        required
-        placeholder='Escreva sua mensagem'
-        rows={3}
-      />
+
+      <StyledInputWithLabel isRequired={true}>Nome</StyledInputWithLabel>
+      <StyledTextarea required placeholder='Escreva sua mensagem' />
+
       <PrimaryButton>Enviar mensagem</PrimaryButton>
     </StyledForm>
   )

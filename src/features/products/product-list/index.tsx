@@ -8,7 +8,7 @@ import { ExpandListLink } from './ExpandListLink'
 import { Product } from "./Product"
 import { products } from './products.list'
 
-export default function ProductList(props: {title: string, link: string}) {
+export function ProductList(props: {title: string, link: string}) {
 
   return (
     <StyledContainer>

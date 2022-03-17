@@ -23,8 +23,6 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          {/* eslint-disable-next-line @next/next/no-title-in-document-head */}
-          <title>My page</title>
           {/* Step 5: Output the styles in the head  */}
           {this.props.styleTags}
         </Head>

@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import { 
   StyledHeader, 
   LogoAndSearchBarContainer, 
@@ -8,6 +9,7 @@ import { SearchBar } from "./SearchBar";
 import { SearchButton } from "./SearchButton";
 
 export function Header() {
+  const router = useRouter();
 
   return (
     <StyledHeader>
@@ -16,7 +18,7 @@ export function Header() {
         <SearchBar />
       </LogoAndSearchBarContainer>
 
-      <LoginButton>Login</LoginButton>
+      <LoginButton onClick={() => router.push('/login')} >Login</LoginButton>
       <SearchButton />
     </StyledHeader>
   )

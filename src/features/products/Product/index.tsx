@@ -1,4 +1,5 @@
 import NextImage from "next/image";
+import { useRouter } from "next/router";
 import { 
   StyledContainer, 
   ProductImageContainer,
@@ -9,6 +10,7 @@ import {
 import { ProductType } from "./product.type"
 
 export function Product(props: {product: ProductType}) {
+  const router = useRouter();
 
   return (
     <StyledContainer>
@@ -21,7 +23,10 @@ export function Product(props: {product: ProductType}) {
       </ProductImageContainer>
       <ProductName>{props.product.name}</ProductName>
       <Price>R$ {props.product.price}</Price>
-      <Link as="a" href={props.product.link}>Ver produto</Link>
+      <Link 
+        as="a" 
+        onClick={() => router.push('/detailed-product')}
+      >Ver produto</Link>
     </StyledContainer>
   )
 }

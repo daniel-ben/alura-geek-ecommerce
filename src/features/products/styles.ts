@@ -16,10 +16,27 @@ export const StyledContainer = styled.div`
   }
 `
 
-export const StyledHeader = styled.div`
-display: flex;
-justify-content: space-between;
-align-items: center;
+type Header = {
+  variant: string
+}
+export const StyledHeader = styled.div<Header>`
+  padding-bottom: 16px;
+
+  display: flex;
+  ${props => props.variant === "complete-list" ? 
+      `flex-direction: column; 
+      align-content: flex-start; 
+      gap: 16px;
+      
+        @media (min-width: ${theme.breakpoints.sm}) {
+          flex-direction: row;
+          justify-content: space-between;
+          align-content: center;
+        }
+      ` 
+    :
+    "flex-directin: row; justify-content: space-between; align-content: center;"
+  };
 `
 
 export const StyledTitle = styled.h2`

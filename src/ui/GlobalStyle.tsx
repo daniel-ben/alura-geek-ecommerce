@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     ${theme.fonts.global}
+    background-color: ${theme.colors.neutral[100]};
   }
 
   a {

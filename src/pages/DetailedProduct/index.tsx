@@ -7,7 +7,7 @@ import {
   Price,
   Description,
 } from './styles'
-import { ProductList } from '@features/products/product-list'
+import { ProductList } from '@features/products'
 
 export function DetailedProduct() {
   return (

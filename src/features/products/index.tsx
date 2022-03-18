@@ -7,14 +7,20 @@ import {
 import { ExpandListLink } from './ExpandListLink'
 import { Product } from "./Product"
 import { products } from './products.list'
+import { PrimaryButton } from '@ui/components'
 
-export function ProductList(props: {title: string, link: string}) {
+export function ProductList(props: {title: string, link: string, variant: string}) {
 
   return (
     <StyledContainer>
-      <StyledHeader>
+      <StyledHeader variant={props.variant}>
         <StyledTitle>{props.title}</StyledTitle>
-        <ExpandListLink link={props.link}/>
+        {props.variant == 'complete-list' ? 
+          <PrimaryButton>Adicionar Produto</PrimaryButton>
+          :
+          <ExpandListLink link={'/all-products'}/>
+        }
+
       </StyledHeader>
 
       <StyledProductList>

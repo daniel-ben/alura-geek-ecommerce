@@ -6,18 +6,20 @@ export const StyledHeader = styled.header`
 display: flex;
 align-items: center;
 justify-content: space-between;
+background-color: white;
 
-margin: 0 16px;
+padding: 0 16px;
 height: 72px;
+width: 100vw;
 
 @media (min-width: ${theme.breakpoints.sm}) {
-  margin: 0 32px;
+  padding: 0 32px;
 }
 
 @media (min-width: ${theme.breakpoints.md}) {
-  width: 80%;
+  width: 100%;
+  padding: 0 10%;
   height: 115px;
-  margin: auto;
 }
 `
 

@@ -7,6 +7,7 @@ export const StyledInput = styled.input`
   border-radius: 4px;
   box-shadow: 0 1px ${theme.colors.neutral[300]};
   resize: none;
+  background-color: white;
 
   &::placeholder {
     color: ${theme.colors.neutral[400]};
@@ -18,7 +19,6 @@ const StyledLabel = styled(StyledInput).attrs({
 })`
   display: flex;
   flex-direction: column;
-  background-color: white;
 
   font-size: 12px;
   line-height: 16px;

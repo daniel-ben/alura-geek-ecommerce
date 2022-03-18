@@ -24,7 +24,7 @@ export function DetailedProduct() {
         </StyledInfoContainer>
 
       </StyledContainer>
-      <ProductList title="Produtos similares" link='#'/>
+      <ProductList title="Produtos similares" link='#' variant='small-list' />
     </>
   )
 }

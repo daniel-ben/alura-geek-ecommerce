@@ -5,9 +5,9 @@ export function Homepage() {
   return (
     <>
       <Banner />
-      <ProductList title="Star Wars" link="#"/>
-      <ProductList title="Consoles" link="#"/>
-      <ProductList title="Diversos" link="#"/>
+      <ProductList title="Star Wars" link="#" variant='small-list'/>
+      <ProductList title="Consoles" link="#" variant='small-list'/>
+      <ProductList title="Diversos" link="#" variant='small-list'/>
     </>
   )
 }

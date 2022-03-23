@@ -7,7 +7,7 @@ import {
   Price,
   Description,
 } from './styles'
-import { ProductList } from '@features/products'
+import { ProductsInCategory } from '@features/products'
 
 export function DetailedProduct() {
   return (
@@ -24,7 +24,7 @@ export function DetailedProduct() {
         </StyledInfoContainer>
 
       </StyledContainer>
-      <ProductList title="Produtos similares" link='#' variant='small-list' />
+      <ProductsInCategory category="Produtos similares" link='#' variant='small-list' />
     </>
   )
 }

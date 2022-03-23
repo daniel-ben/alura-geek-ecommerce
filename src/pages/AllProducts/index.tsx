@@ -1,8 +1,8 @@
-import { ProductList } from "@features/products";
+import { ProductsInCategory } from "@features/products";
 
 export function AllProducts() {
 
   return (
-    <ProductList title="Todos os produtos" link='#' variant="complete-list"/>
+    <ProductsInCategory category="Todos os produtos" link='#' variant="complete-list"/>
   )
 }

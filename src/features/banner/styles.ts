@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { theme } from '@ui/theme'
 
 export const StyledContainer = styled.section`
-  width: 100vw;
+  width: 100%;
   height: 192px;
   padding: 16px;
   background-image: url('/images/banner.png');

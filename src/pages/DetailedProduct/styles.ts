@@ -41,7 +41,7 @@ export const ProductImage = styled.div`
   }
 `
 
-export const StyledInfoContainer = styled.div`
+export const ProductInfoContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;

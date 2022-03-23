@@ -1,8 +1,7 @@
-import NextImage from 'next/image';
 import { 
   StyledContainer,
   ProductImage, 
-  StyledInfoContainer,
+  ProductInfoContainer,
   ProductName,
   Price,
   Description,
@@ -15,13 +14,13 @@ export function DetailedProduct() {
       <StyledContainer>
         <ProductImage />
 
-        <StyledInfoContainer>
+        <ProductInfoContainer>
           <ProductName>Product XYZ</ProductName>
           <Price>R$ 60,00</Price>
           <Description>
             Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam
           </Description>
-        </StyledInfoContainer>
+        </ProductInfoContainer>
 
       </StyledContainer>
       <ProductsInCategory category="Produtos similares" link='#' variant='small-list' />

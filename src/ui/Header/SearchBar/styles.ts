@@ -2,34 +2,40 @@ import styled from "styled-components";
 import { theme } from "@ui/theme";
 
 export const StyledContainer = styled.div`
-background-color: ${theme.colors.neutral[100]};
 border-radius: 20px;
 padding: 12px;
 padding-left: 16px;
-width: 100%;
 max-width: 400px;
 
-display: none;
+order: 3;
+
 align-items: center;
 justify-content: space-between;
 
-input {
-  width: 100%;
-  
-  ::placeholder {
-    opacity: 0.5;
-  }
-}
-
-img {
-  opacity: 0.5;
-}
-
 @media (min-width: ${theme.breakpoints.sm}) {
   display: flex;
+  order: 2;
+  // half of the width of the header - logo margin - logo size
+  width: calc(50% - 32px - 100px);
+  background-color: ${theme.colors.neutral[100]};
+
+  img {
+    opacity: 0.5;
+  }
 }
 `;
 
 export const StyledInput = styled.input`
+display: none;
 background-color: transparent;
+
+
+@media (min-width: ${theme.breakpoints.sm}) {
+  display: block;
+  width: 100%;
+    
+  ::placeholder {
+    opacity: 0.5;
+  }
+}
 `

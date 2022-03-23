@@ -10,35 +10,26 @@ background-color: white;
 
 padding: 0 16px;
 height: 72px;
-width: 100vw;
 
 @media (min-width: ${theme.breakpoints.sm}) {
   padding: 0 32px;
+  flex-wrap: wrap;
+  jusutify-content: flex-start;
 }
 
 @media (min-width: ${theme.breakpoints.md}) {
-  width: 100%;
   padding: 0 10%;
   height: 115px;
 }
 `
 
-export const LogoAndSearchBarContainer = styled.div`
-display: flex;
-align-items: center;
-gap: 32px;
-
-@media (min-width: ${theme.breakpoints.sm}) {
-  width: 52%;
-}
-`
-
 export const LoginButton = styled(SecondaryButton)`
   width: 133px;
-  margin: 0 4px;
-
+  
   @media (min-width: ${theme.breakpoints.sm}) {
     width: 166px;
+    margin: 0 0 0 auto;
+    order: 3;
   }
 
   @media (min-width: ${theme.breakpoints.md}) {

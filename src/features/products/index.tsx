@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import { 
   StyledContainer, 
   StyledProductList, 
@@ -11,12 +12,15 @@ import { PrimaryButton } from '@ui/components'
 
 export function ProductsInCategory(props: {category: string, link: string, variant: string}) {
 
+  const router = useRouter()
+  const handleClick = () => router.push('/add-product')
+
   return (
     <StyledContainer>
       <StyledHeader variant={props.variant}>
         <StyledTitle>{props.category}</StyledTitle>
         {props.variant == 'complete-list' ? 
-          <PrimaryButton>Adicionar Produto</PrimaryButton>
+          <PrimaryButton onClick={handleClick}>Adicionar Produto</PrimaryButton>
           :
           <ExpandListLink link={'/all-products'}/>
         }

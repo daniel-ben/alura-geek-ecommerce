@@ -12,8 +12,8 @@ export default function LoginPage() {
     <StyledContainer>
       <StyledTitle>Iniciar sessão</StyledTitle>
 
-      <EmailInput type={"email"} placeholder="Escreva seu email"/>
-      <PasswordInput type={"password"} placeholder="Escreva sua senha"/>
+      <EmailInput type="email" placeholder="Escreva seu email"/>
+      <PasswordInput type="password" placeholder="Escreva sua senha"/>
 
       <LoginButton>Entrar</LoginButton>
     </StyledContainer>

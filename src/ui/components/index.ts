@@ -1,2 +1,2 @@
 export { PrimaryButton, SecondaryButton } from "./Buttons";
-export { StyledInput, StyledInputWithLabel, StyledTextarea } from "./Inputs";
+export { SimpleInput, InputWithLabel, SimpleTextarea, TextareaWithLabel } from "./Inputs";

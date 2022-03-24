@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { theme } from "@ui/theme";
-import { PrimaryButton, StyledInput } from "@ui/components";
+import { PrimaryButton, SimpleInput } from "@ui/components";
 
 export const StyledContainer = styled.div`
   display: flex;
@@ -27,7 +27,7 @@ export const StyledTitle = styled.h2`
   }
 `
 
-const LoginInput = styled(StyledInput)`
+const LoginInput = styled(SimpleInput)`
   width: 100%;
   max-width: 275px;
 

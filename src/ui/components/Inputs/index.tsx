@@ -1,46 +1,35 @@
-import styled from "styled-components"
-import { theme } from "@ui/theme"
+import { StyledInput, StyledLabel, StyledTextarea } from './styles';
+import { InputProps, InputWithLabelProps, TextareaWithLabelProps } from './types';
 
-export const StyledInput = styled.input`
-  ${theme.fonts.sm}
-  padding: 8px 12px;
-  border-radius: 4px;
-  box-shadow: 0 1px ${theme.colors.neutral[300]};
-  resize: none;
-  background-color: white;
+export function SimpleInput(props: InputProps) {
+  return <StyledInput 
+    required={props.isRequired} 
+    placeholder={props.placeholder} 
+    type={props.type}
+  />
+}
 
-  &::placeholder {
-    color: ${theme.colors.neutral[400]};
-  }
-`
-
-const StyledLabel = styled(StyledInput).attrs({
-  as: "label",
-})`
-  display: flex;
-  flex-direction: column;
-
-  font-size: 12px;
-  line-height: 16px;
-  color: ${theme.colors.neutral[400]};
-
-  & > input {
-    box-shadow: none;
-  }
-`
-
-export const StyledInputWithLabel = function(props:{ children: React.ReactNode, isRequired: boolean }) {
+export function InputWithLabel(props: InputWithLabelProps) {
   return (
     <StyledLabel>
-      {props.children}
-      <StyledInput required={props.isRequired}/>
+      {props.label}
+      <StyledInput 
+        required={props.isRequired}
+        type={props.type}
+      />
     </StyledLabel>
   )
 }
 
-export const StyledTextarea = styled(StyledInput).attrs({
-  as: "textarea",
-  rows: 3,
-})`
-  resize: none;
-`
+export function SimpleTextarea(props: InputProps) {
+  return <StyledTextarea required={props.isRequired} placeholder={props.placeholder} />
+}
+
+export function TextareaWithLabel(props: TextareaWithLabelProps) {
+  return (
+    <StyledLabel>
+      {props.label}
+      <StyledTextarea required={props.isRequired} />
+    </StyledLabel>
+  )
+}

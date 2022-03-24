@@ -4,8 +4,8 @@ import {
 } from './styles'
 import { 
   PrimaryButton, 
-  StyledInputWithLabel, 
-  StyledTextarea 
+  InputWithLabel, 
+  SimpleTextarea 
 } from '@ui/components'
 
 export default function ContactForm() {
@@ -14,8 +14,8 @@ export default function ContactForm() {
     <StyledForm>
       <StyledFormLabel>Fale conosco</StyledFormLabel>
 
-      <StyledInputWithLabel isRequired={true}>Nome</StyledInputWithLabel>
-      <StyledTextarea required placeholder='Escreva sua mensagem' />
+      <InputWithLabel label={'Nome'} isRequired={true} />
+      <SimpleTextarea isRequired placeholder='Escreva sua mensagem' />
 
       <PrimaryButton>Enviar mensagem</PrimaryButton>
     </StyledForm>

@@ -2,11 +2,16 @@ import NextImage from 'next/image';
 import { useRouter } from 'next/router';
 import  { HeaderLogoContainer } from './styles';
 
-export function HeaderLogo() {
+
+export function HeaderLogo(props: { searchBarDisplay: boolean }) {
   const router = useRouter();
+  const handleClick = () => router.push('/');
 
   return (
-    <HeaderLogoContainer onClick={() => router.push('/')}>
+    <HeaderLogoContainer 
+      onClick={handleClick}
+      searchBarDisplay={props.searchBarDisplay}
+    >
       <NextImage 
         src={"/images/Logo.svg"} 
         alt="logo" 

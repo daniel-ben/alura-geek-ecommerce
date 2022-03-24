@@ -23,10 +23,16 @@ height: 72px;
 }
 `
 
-export const LoginButton = styled(SecondaryButton)`
+type LoginButtonProps = {
+  searchBarDisplay: boolean
+}
+
+export const LoginButton = styled(SecondaryButton)<LoginButtonProps>`
   width: 133px;
+  display: ${props => props.searchBarDisplay ? "none" : "flex"};
   
   @media (min-width: ${theme.breakpoints.sm}) {
+    display: flex;
     width: 166px;
     margin: 0 0 0 auto;
     order: 3;

@@ -2,7 +2,7 @@ import NextImage from 'next/image'
 import { useRouter } from 'next/router'
 import { FooterLogoContainer } from './styles'
 
-export function FooterLogo() {
+export default function FooterLogo() {
   const router = useRouter()
 
   return (

@@ -1,7 +1,7 @@
 import { Banner } from '@features/banner'
 import { ProductsInCategory } from '@features/products'
 
-export function Homepage() {
+export default function Homepage() {
   return (
     <>
       <Banner />

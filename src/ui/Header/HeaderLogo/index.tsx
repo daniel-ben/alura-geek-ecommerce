@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import  { HeaderLogoContainer } from './styles';
 
 
-export function HeaderLogo(props: { searchBarDisplay: boolean }) {
+export default function HeaderLogo(props: { searchBarDisplay: boolean }) {
   const router = useRouter();
   const handleClick = () => router.push('/');
 

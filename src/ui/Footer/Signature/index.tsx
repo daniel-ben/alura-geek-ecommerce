@@ -1,6 +1,6 @@
 import { StyledSection, StyledText} from './styles'
 
-export function Signature() {
+export default function Signature() {
   return (
     <StyledSection>
       <StyledText>Desenvolvido por Daniel Ben</StyledText>

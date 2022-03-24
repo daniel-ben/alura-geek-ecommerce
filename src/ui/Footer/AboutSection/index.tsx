@@ -1,7 +1,7 @@
 import { StyledList, StyledItem } from './styles'
-import { FooterLogo } from '../FooterLogo'
+import FooterLogo from '../FooterLogo'
 
-export function AboutSection() {
+export default function AboutSection() {
   const list: readonly string[] = [
     'Quem somos nós',
     'Política de privacidade',

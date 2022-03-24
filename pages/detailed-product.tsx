@@ -1,5 +1,6 @@
-import { DetailedProduct } from "@pages/DetailedProduct";
+import { NextPage } from "next";
+import DetailedProduct from "@pages/DetailedProduct";
 
-export default function DetailedProductPage() {
+export default function DetailedProductPage<NextPage>() {
   return <DetailedProduct />;
 }

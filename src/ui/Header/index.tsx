@@ -4,7 +4,7 @@ import {
   StyledHeader, 
   LoginButton, 
 } from './styles';
-import { HeaderLogo } from './HeaderLogo';
+import HeaderLogo from './HeaderLogo';
 import SearchBar from "./SearchBar";
 
 export function Header() {

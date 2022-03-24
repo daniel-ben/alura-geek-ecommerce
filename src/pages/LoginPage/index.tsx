@@ -7,7 +7,7 @@ import {
 } from './styles';
 
 
-export function LoginPage() {
+export default function LoginPage() {
   return (
     <StyledContainer>
       <StyledTitle>Iniciar sessão</StyledTitle>

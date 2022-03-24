@@ -8,7 +8,7 @@ import {
 } from './styles'
 import { ProductsInCategory } from '@features/products'
 
-export function DetailedProduct() {
+export default function DetailedProduct() {
   return (
     <>
       <StyledContainer>

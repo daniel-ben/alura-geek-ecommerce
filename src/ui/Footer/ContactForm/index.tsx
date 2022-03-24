@@ -8,7 +8,7 @@ import {
   StyledTextarea 
 } from '@ui/components'
 
-export function ContactForm() {
+export default function ContactForm() {
 
   return (
     <StyledForm>

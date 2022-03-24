@@ -1,10 +1,9 @@
 import type { NextPage } from 'next'
-import { Homepage } from 'src/pages/Homepage'
+import Homepage from 'src/pages/Homepage'
 
-const Home: NextPage = () => {
+export default function Home<NextPage>() {
   return (
     <Homepage />
   )
 }
 
-export default Home

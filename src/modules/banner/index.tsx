@@ -1,4 +1,4 @@
-import { PrimaryButton } from '@ui/components'
+import { PrimaryButton } from '@common/components'
 import { StyledContainer, StyledTitle, StyledSubtitle } from './styles'
 
 

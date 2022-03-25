@@ -1,5 +1,5 @@
 import { useState, useEffect, Dispatch, SetStateAction } from 'react';
-import { InputWithLabel, SimpleTextarea } from '@ui/components'
+import { InputWithLabel, SimpleTextarea } from '@common/components'
 import {
   StyledForm,
   StyledLabel,

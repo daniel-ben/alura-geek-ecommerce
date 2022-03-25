@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { theme } from "@ui/theme";
 import { ParagraphProps } from "./types";
-import { PrimaryButton, SecondaryButton } from '@ui/components'
+import { PrimaryButton, SecondaryButton } from '@common/components'
 
 export const StyledForm = styled.form`
   display: flex;

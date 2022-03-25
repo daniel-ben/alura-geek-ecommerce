@@ -1,11 +1,8 @@
 import styled from "styled-components";
 import { theme } from "@ui/theme";
+import { Display } from "./types";
 
-type Props = {
-  searchBarDisplay: boolean
-}
-
-export const StyledContainer = styled.div<Props>`
+export const StyledContainer = styled.div<Display>`
   border-radius: 20px;
   padding: 12px;
   padding-left: 16px;
@@ -46,7 +43,7 @@ export const StyledContainer = styled.div<Props>`
   }
 `;
 
-export const StyledInput = styled.input<Props>`
+export const StyledInput = styled.input<Display>`
   background-color: transparent;
 
   ::placeholder {

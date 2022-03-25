@@ -6,7 +6,7 @@ import {
   PrimaryButton, 
   InputWithLabel, 
   SimpleTextarea 
-} from '@ui/components'
+} from '@common/components'
 
 export default function ContactForm() {
 

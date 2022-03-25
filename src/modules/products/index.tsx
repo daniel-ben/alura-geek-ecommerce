@@ -9,7 +9,7 @@ import { ProductListProps } from './types'
 import { ExpandListLink } from './ExpandListLink'
 import { Product } from "./Product"
 import { products } from './products.list'
-import { PrimaryButton } from '@ui/components'
+import { PrimaryButton } from '@common/components'
 
 export function ProductsInCategory({category, link, variant}: ProductListProps) {
   const router = useRouter()

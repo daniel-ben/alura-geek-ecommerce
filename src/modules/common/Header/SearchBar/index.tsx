@@ -3,7 +3,6 @@ import { StyledContainer, StyledInput } from "./styles"
 import { SearchBarProps } from "./types";
 
 export default function SearchBar({searchBarDisplay, setSearchBarDisplay} : SearchBarProps) {
-  
   const handleClick = () => setSearchBarDisplay((currentState) => !currentState);
 
   return (
@@ -15,7 +14,7 @@ export default function SearchBar({searchBarDisplay, setSearchBarDisplay} : Sear
       />
       <NextImage 
         src={"/images/search.svg"} 
-        alt="Search" 
+        alt="Search button" 
         width={17} 
         height={17}
         layout="fixed"

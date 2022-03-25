@@ -1,17 +1,11 @@
 import { useState } from "react";
-import { useRouter } from 'next/router';
-import { 
-  StyledHeader, 
-  LoginButton, 
-} from './styles';
+import { StyledHeader } from './styles';
 import HeaderLogo from './HeaderLogo';
 import SearchBar from "./SearchBar";
+import LoginButton from "./LoginButton";
 
 export default function Header() {
   const [searchBarDisplay, setSearchBarDisplay] = useState(false);
-  const router = useRouter();
-
-  const handleClick = () => router.push('/login');
 
   return (
     <StyledHeader>
@@ -20,10 +14,7 @@ export default function Header() {
         searchBarDisplay={searchBarDisplay} 
         setSearchBarDisplay={setSearchBarDisplay}
       />
-      <LoginButton 
-        onClick={handleClick} 
-        searchBarDisplay={searchBarDisplay}
-      >Login</LoginButton>
+      <LoginButton searchBarDisplay={searchBarDisplay} />
     </StyledHeader>
   )
 }

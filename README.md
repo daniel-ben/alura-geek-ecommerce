@@ -21,10 +21,13 @@ Deployed at ()
 ## Screenshots
 
 #### Things to fix later
+- Try grid for footer to remove extra logo
+- Remove footer logo component and just use next image
 - Refactor Products folder
 - Try grid for products list section, there's an option to auto add columns with screen size
 - Separate what's component and what's style better
 - Remove function inside components (footer)
-- Try grid for footer to remove extra logo
-- Remove footer logo component and just use next image
 - Change px to rem and em
+- Remove map from returns, give them their own component
+- Move header and footer to common folder
+- Read about useReducer and React Query

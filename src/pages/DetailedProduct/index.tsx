@@ -6,7 +6,7 @@ import {
   Price,
   Description,
 } from './styles'
-import { ProductsInCategory } from '@features/products'
+import { ProductsInCategory } from '@modules/products'
 
 export default function DetailedProduct() {
   return (

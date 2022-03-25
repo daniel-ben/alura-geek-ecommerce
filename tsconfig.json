@@ -3,7 +3,8 @@
     "baseUrl": ".",
     "paths": {
       "@ui/*": ["src/ui/*"],
-      "@features/*": ["src/features/*"],
+      "@modules/*": ["src/modules/*"],
+      "@common/*": ["src/modules/common/*"],
       "@pages/*": ["src/pages/*"],
     },
     "target": "es5",

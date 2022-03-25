@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { theme } from "@ui/theme";
-import { PrimaryButton, SimpleInput } from "@ui/components";
+import { PrimaryButton, SimpleInput } from "@common/components";
 
 export const StyledForm = styled.form`
   display: flex;

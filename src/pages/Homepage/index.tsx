@@ -1,5 +1,5 @@
-import Banner from '@features/banner'
-import { ProductsInCategory } from '@features/products'
+import Banner from '@modules/banner'
+import { ProductsInCategory } from 'src/modules/products'
 
 export default function Homepage() {
   return (

@@ -27,3 +27,7 @@ Deployed at ()
 - Finish add-product page for tablet and desktop
 - Separate what's component and what's style better
 - Add types to different files
+- Remove function inside components (footer)
+- Try grid for footer to remove extra logo
+- Remove footer logo component and just use next image
+- Refactor Products folder

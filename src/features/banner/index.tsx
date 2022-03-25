@@ -2,8 +2,7 @@ import { PrimaryButton } from '@ui/components'
 import { StyledContainer, StyledTitle, StyledSubtitle } from './styles'
 
 
-export function Banner() {
-
+export default function Banner() {
   return (
     <StyledContainer>
       <StyledTitle>Dezembro Promocional</StyledTitle>

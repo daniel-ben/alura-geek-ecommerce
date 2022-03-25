@@ -1,4 +1,4 @@
-import { Banner } from '@features/banner'
+import Banner from '@features/banner'
 import { ProductsInCategory } from '@features/products'
 
 export default function Homepage() {

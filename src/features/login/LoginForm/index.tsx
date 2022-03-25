@@ -6,6 +6,7 @@ import {
 } from './styles';
 
 export default function LoginForm() {
+
   return (
     <StyledForm>
       <StyledLabel>Iniciar sessão</StyledLabel>

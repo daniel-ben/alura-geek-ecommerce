@@ -1,21 +1,17 @@
 import NextImage from "next/image";
-import { Dispatch, SetStateAction } from "react";
 import { StyledContainer, StyledInput } from "./styles"
+import { SearchBarProps } from "./types";
 
-type SearchBarProps = {
-  searchBarDisplay: boolean,
-  setSearchBarDisplay: Dispatch<SetStateAction<boolean>>
-}
-
-export default function SearchBar(props : SearchBarProps) {
-  const handleClick = () => props.setSearchBarDisplay((currentState) => !currentState);
+export default function SearchBar({searchBarDisplay, setSearchBarDisplay} : SearchBarProps) {
+  
+  const handleClick = () => setSearchBarDisplay((currentState) => !currentState);
 
   return (
-    <StyledContainer searchBarDisplay={props.searchBarDisplay}>
+    <StyledContainer searchBarDisplay={searchBarDisplay}>
       <StyledInput 
         type="text" 
         placeholder="O que deseja encontrar?"
-        searchBarDisplay={props.searchBarDisplay}
+        searchBarDisplay={searchBarDisplay}
       />
       <NextImage 
         src={"/images/search.svg"} 

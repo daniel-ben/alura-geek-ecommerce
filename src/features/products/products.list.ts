@@ -1,4 +1,4 @@
-import { ProductType } from './Product/product.type'
+import { ProductType } from './Product/types'
 
 export const products: readonly ProductType[] = [
   {

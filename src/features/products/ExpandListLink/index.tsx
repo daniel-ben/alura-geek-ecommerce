@@ -1,12 +1,15 @@
 import NextImage from 'next/image';
 import { useRouter } from 'next/router';
 import { StyledLink, StyledText, StyledArrowIcon } from './styles'
+import { LinkProps } from './types';
 
-export function ExpandListLink(props: {link: string}) {
+export function ExpandListLink({ link }: LinkProps) {
   const router = useRouter();
 
+  const handleClick = () => router.push(link);
+
   return (
-    <StyledLink onClick={() => router.push(props.link)}>
+    <StyledLink onClick={handleClick}>
       <StyledText>Ver tudo</StyledText>
       <StyledArrowIcon>
         <NextImage

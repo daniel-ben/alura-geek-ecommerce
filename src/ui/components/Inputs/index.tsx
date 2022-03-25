@@ -1,28 +1,28 @@
 import { StyledInput, StyledLabel, StyledTextarea } from './styles';
 import { InputProps, InputWithLabelProps } from './types';
 
-export function SimpleInput(props: InputProps) {
+export function SimpleInput({ isRequired, placeholder, type, className}: InputProps) {
   return <StyledInput 
-    required={props.isRequired} 
-    placeholder={props.placeholder} 
-    type={props.type}
-    className={props.className}
+    required={isRequired} 
+    placeholder={placeholder} 
+    type={type}
+    className={className}
   />
 }
 
-export function InputWithLabel(props: InputWithLabelProps) {
+export function InputWithLabel({label, isRequired, type, className}: InputWithLabelProps) {
   return (
     <StyledLabel>
-      {props.label}
+      {label}
       <StyledInput 
-        required={props.isRequired}
-        type={props.type}
-        className={props.className}
+        required={isRequired}
+        type={type}
+        className={className}
       />
     </StyledLabel>
   )
 }
 
-export function SimpleTextarea(props: InputProps) {
-  return <StyledTextarea required={props.isRequired} placeholder={props.placeholder} />
+export function SimpleTextarea({isRequired, placeholder}: InputProps) {
+  return <StyledTextarea required={isRequired} placeholder={placeholder} />
 }

@@ -4,7 +4,7 @@ import AboutSection from './AboutSection'
 import Signature from './Signature'
 import FooterLogo from './FooterLogo'
 
-export function Footer() {
+export default function Footer() {
 
   return (
     <>

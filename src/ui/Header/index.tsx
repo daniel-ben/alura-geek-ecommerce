@@ -7,9 +7,10 @@ import {
 import HeaderLogo from './HeaderLogo';
 import SearchBar from "./SearchBar";
 
-export function Header() {
+export default function Header() {
   const [searchBarDisplay, setSearchBarDisplay] = useState(false);
   const router = useRouter();
+
   const handleClick = () => router.push('/login');
 
   return (

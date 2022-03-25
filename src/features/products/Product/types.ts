@@ -7,3 +7,7 @@ export type ProductType = {
   price: string,
   link: string,
 }
+
+export type ProductProps = {
+  product: ProductType;
+}

@@ -7,25 +7,28 @@ import {
   Price, 
   Link 
 } from "./styles";
-import { ProductType } from "./product.type"
+import { ProductProps } from "./types"
 
-export function Product(props: {product: ProductType}) {
+export function Product({product}: ProductProps) {
   const router = useRouter();
+
+  const handleClick = () => router.push('/detailed-product')
 
   return (
     <StyledContainer>
       <ProductImageContainer>
         <NextImage 
-          src={props.product.image}
-          alt={props.product.alt}
+          src={product.image}
+          alt={product.alt}
           layout="fill"
         />
       </ProductImageContainer>
-      <ProductName>{props.product.name}</ProductName>
-      <Price>R$ {props.product.price}</Price>
+
+      <ProductName>{product.name}</ProductName>
+      <Price>R$ {product.price}</Price>
       <Link 
         as="a" 
-        onClick={() => router.push('/detailed-product')}
+        onClick={handleClick}
       >Ver produto</Link>
     </StyledContainer>
   )

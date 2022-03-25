@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { theme } from "@ui/theme";
-import { PrimaryButton } from '@ui/components'
+import { ParagraphProps } from "./types";
+import { PrimaryButton, SecondaryButton } from '@ui/components'
 
 export const StyledForm = styled.form`
   display: flex;
@@ -14,7 +15,7 @@ export const StyledForm = styled.form`
 
   @media (min-width: ${theme.breakpoints.md}) {
     max-width: 600px;
-    padding: 64px;
+    padding: 64px 0;
     margin: 0 auto;
   }
 `
@@ -25,9 +26,15 @@ export const StyledLabel = styled.label`
   color: ${theme.colors.neutral[800]};
 `
 
+export const AddImageSection = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+`
+
 export const StyledImagePlaceholder = styled.div`
-  height: 134px;
   width: 100%;
+  padding: 32px;
   background-color: white;
   border: 1px dashed ${theme.colors.neutral[300]};
 
@@ -38,15 +45,46 @@ export const StyledImagePlaceholder = styled.div`
   gap: 22px;
 
   @media (min-width: ${theme.breakpoints.sm}) {
-    height: 152px;
     width: 254px;
   }
 `
 
-export const StyledParagraph = styled.p`
+export const StyledIcon = styled.div.attrs({
+  alt: "",
+})`
+  background-image: url(/images/plus.svg);
+  width: 18px;
+  height: 18px;
+
+  @media (min-width: ${theme.breakpoints.sm}) {
+    background-image: url(/images/image-placeholder.svg);
+    width: 32px;
+    height: 32px;
+  }
+`
+
+export const StyledSpan = styled.span`
+  ${theme.fonts.sm}
+  display: none;
+
+  @media (min-width: ${theme.breakpoints.sm}) {
+    display: block;
+  }
+`
+
+export const AddImageButton = styled(SecondaryButton)`
+  display: none;
+
+  @media (min-width: ${theme.breakpoints.sm}) {
+    display: block;
+  }
+`
+
+export const StyledParagraph = styled.p<ParagraphProps>`
   font-size: 14px;
   line-height: 20px;
   color: ${theme.colors.neutral[700]};
+  text-align: center;
 `
 
 export const AddProductButton = styled(PrimaryButton)`

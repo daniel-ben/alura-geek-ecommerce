@@ -1,34 +1,79 @@
-import NextImage from 'next/image';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Dispatch, SetStateAction } from 'react';
 import { InputWithLabel, SimpleTextarea } from '@ui/components'
-import { 
-  StyledForm, 
-  StyledLabel, 
-  StyledImagePlaceholder, 
-  AddProductButton, 
-  StyledParagraph
+import {
+  StyledForm,
+  StyledLabel,
+  StyledImagePlaceholder,
+  StyledIcon,
+  AddProductButton,
+  StyledParagraph,
+  AddImageSection,
+  StyledSpan,
+  AddImageButton
 } from './styles'
+import { theme } from '@ui/theme';
+
+function changeElementsByScreenSize (
+  screenSize: number,
+  setTextBasedOnScreenSize: Dispatch<SetStateAction<{
+    imageText: string;
+    buttonText: string;
+  }>>
+): void  
+{
+  const mobileSize = parseInt(theme.breakpoints.sm)
+  const tabletSize = parseInt(theme.breakpoints.md)
+  
+  if (screenSize < mobileSize) {
+    setTextBasedOnScreenSize({
+      imageText: 'Adicionar uma imagem para o produto',
+      buttonText: ''
+    })
+  } else if (screenSize >= mobileSize && screenSize < tabletSize) {
+    setTextBasedOnScreenSize({
+      imageText: 'Arraste para adicionar uma imagem para o produto',
+      buttonText: 'Tablet'
+    })
+  } else {
+    setTextBasedOnScreenSize({
+      imageText: 'Arraste para adicionar uma imagem para o produto',
+      buttonText: 'Desktop'
+    })
+  }
+}
 
 export default function AddProduct() {
+  const [textBasedOnScreenSize, setTextBasedOnScreenSize] = useState({
+    imageText: '',
+    buttonText: '',
+  })
+
+  useEffect(() => {
+    changeElementsByScreenSize(window.innerWidth, setTextBasedOnScreenSize)
+    
+    window.addEventListener('resize', () => {
+      changeElementsByScreenSize(window.innerWidth, setTextBasedOnScreenSize)
+    })
+  }, []);
 
   return (
     <StyledForm>
       <StyledLabel>Adicionar novo produto</StyledLabel>
 
-      <StyledImagePlaceholder>
-        <NextImage 
-          src="/images/plus.svg"
-          alt=""
-          width={18}
-          height={18}
-          layout="fixed"
-        />
-        <StyledParagraph>Adicionar uma imagem para o produto</StyledParagraph>
-      </StyledImagePlaceholder>
+      <AddImageSection>
+        <StyledImagePlaceholder>
+          <StyledIcon />
+          <StyledParagraph>{textBasedOnScreenSize.imageText}</StyledParagraph>
+        </StyledImagePlaceholder>
 
-      <InputWithLabel label='Nome do produto' isRequired/>
-      <InputWithLabel label='Preço do produto' isRequired/>
-      <SimpleTextarea placeholder='Descrição do produto' isRequired/>
+        <StyledSpan>Ou</StyledSpan>
+
+        <AddImageButton>Procure no seu {textBasedOnScreenSize.buttonText}</AddImageButton>
+      </AddImageSection>
+
+      <InputWithLabel label='Nome do produto' isRequired />
+      <InputWithLabel label='Preço do produto' isRequired />
+      <SimpleTextarea placeholder='Descrição do produto' isRequired />
 
       <AddProductButton>Adicionar produto</AddProductButton>
     </StyledForm>

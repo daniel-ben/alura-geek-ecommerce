@@ -21,13 +21,10 @@ Deployed at ()
 ## Screenshots
 
 #### Things to fix later
-- Add icon and text to image placeholder on add-product page
+- Refactor Products folder
 - Try grid for products list section, there's an option to auto add columns with screen size
-- Remove inline functions and place them in handle functions
-- Finish add-product page for tablet and desktop
 - Separate what's component and what's style better
-- Add types to different files
 - Remove function inside components (footer)
 - Try grid for footer to remove extra logo
 - Remove footer logo component and just use next image
-- Refactor Products folder
+- Change px to rem and em

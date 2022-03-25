@@ -27,7 +27,7 @@ export const StyledLabel = styled.label`
   }
 `
 
-const LoginInput = styled(SimpleInput)`
+export const LoginInput = styled(SimpleInput)`
   width: 100%;
   max-width: 275px;
 
@@ -36,10 +36,6 @@ const LoginInput = styled(SimpleInput)`
     padding: 22px 12px;
   }
 `
-
-export const EmailInput = styled(LoginInput)``
-
-export const PasswordInput = styled(LoginInput)``
 
 export const LoginButton = styled(PrimaryButton)`
   padding: 12px 34px;

@@ -1,19 +1,36 @@
-import { PrimaryButton, InputWithLabel, TextareaWithLabel } from '@ui/components'
-import { InsertImageContainer, StyledContainer, StyledTitle } from './styles'
+import NextImage from 'next/image';
+import { useState, useEffect } from 'react';
+import { InputWithLabel, SimpleTextarea } from '@ui/components'
+import { 
+  StyledForm, 
+  StyledLabel, 
+  StyledImagePlaceholder, 
+  AddProductButton, 
+  StyledParagraph
+} from './styles'
 
 export default function AddProduct() {
 
   return (
-    <StyledContainer>
-      <StyledTitle>Adicionar novo produto</StyledTitle>
+    <StyledForm>
+      <StyledLabel>Adicionar novo produto</StyledLabel>
 
-      <InsertImageContainer></InsertImageContainer>
+      <StyledImagePlaceholder>
+        <NextImage 
+          src="/images/plus.svg"
+          alt=""
+          width={18}
+          height={18}
+          layout="fixed"
+        />
+        <StyledParagraph>Adicionar uma imagem para o produto</StyledParagraph>
+      </StyledImagePlaceholder>
 
       <InputWithLabel label='Nome do produto' isRequired/>
       <InputWithLabel label='Preço do produto' isRequired/>
-      <TextareaWithLabel label='Descrição do produto' isRequired/>
+      <SimpleTextarea placeholder='Descrição do produto' isRequired/>
 
-      <PrimaryButton>Adicionar produto</PrimaryButton>
-    </StyledContainer>
+      <AddProductButton>Adicionar produto</AddProductButton>
+    </StyledForm>
   )
 }

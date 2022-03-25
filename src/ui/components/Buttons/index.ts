@@ -1,2 +1,1 @@
-export { PrimaryButton } from './PrimaryButton';
-export { SecondaryButton } from './SecondaryButton';
+export { PrimaryButton, SecondaryButton } from './styles';

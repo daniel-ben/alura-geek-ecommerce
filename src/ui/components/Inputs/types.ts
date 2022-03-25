@@ -1,6 +1,7 @@
 type BasicInputProps = {
   isRequired?: boolean,
   type?: string,
+  className?: string,
 }
 
 export type InputProps = BasicInputProps & {
@@ -9,8 +10,4 @@ export type InputProps = BasicInputProps & {
 
 export type InputWithLabelProps = BasicInputProps & {
   label: string,
-}
-
-export type TextareaWithLabelProps = InputWithLabelProps & {
-  rows?: number,
 }

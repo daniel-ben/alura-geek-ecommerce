@@ -21,9 +21,6 @@ Deployed at ()
 ## Screenshots
 
 #### Things to fix later
-- Make a variant = 'big' | 'normal' for buttons
-- Make a variant = 'big' | 'small' for label font
-- Fix login page inputs
 - Add icon and text to image placeholder on add-product page
 - Try grid for products list section, there's an option to auto add columns with screen size
 - Remove inline functions and place them in handle functions

@@ -8,12 +8,13 @@ export const StyledForm = styled.form`
   width: 100%;
 
   @media (min-width: ${theme.breakpoints.sm}) {
-    flex-grow: 1;
-    width: auto;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
   }
 
   @media (min-width: ${theme.breakpoints.md}) {
-    max-width: 50%;
+    grid-column: 3 / 4;
+    grid-row: 1 / 1;
   }
 `
 

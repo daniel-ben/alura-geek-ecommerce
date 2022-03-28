@@ -1,5 +1,4 @@
 import { StyledList, StyledItem } from './styles'
-import FooterLogo from '../FooterLogo'
 
 export default function AboutSection() {
   const list: readonly string[] = [
@@ -13,7 +12,6 @@ export default function AboutSection() {
 
   return (
     <StyledList>
-      <FooterLogo />
       {list.map((item, index) => <StyledItem key={index}>{item}</StyledItem>)}
     </StyledList>
   )

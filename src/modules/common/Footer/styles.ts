@@ -2,30 +2,23 @@ import styled from 'styled-components'
 import { theme } from '@ui/theme'
 
 export const StyledFooter = styled.footer`
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 32px;
-padding: 16px;
-justify-content: space-between;
-background-color: ${theme.colors.primary[100]};
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 32px;
 
-& > *:first-child {
-  display: none;
+  padding: 16px;
+  background-color: ${theme.colors.primary[100]};
+  
+  @media (min-width: ${theme.breakpoints.sm}) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 16px;
+    
+    padding: 32px;
+  }
 
   @media (min-width: ${theme.breakpoints.md}) {
-    display: block;
+    padding: 64px 10%;
+    grid-template-columns: 25% 25% 50%;
   }
-}
-
-@media (min-width: ${theme.breakpoints.sm}) {
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 32px;
-}
-
-@media (min-width: ${theme.breakpoints.md}) {
-  padding: 64px 10%;
-  justify-content: space-between;
-}
 `

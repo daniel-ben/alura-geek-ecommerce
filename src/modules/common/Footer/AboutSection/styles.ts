@@ -2,28 +2,21 @@ import styled from 'styled-components'
 import { theme } from '@ui/theme'
 
 export const StyledList = styled.ul`
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 16px;
-list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  list-style-type: none;
 
-& > *:first-child {
-  display: block;
+  @media (min-width: ${theme.breakpoints.sm}) {
+    grid-column: 1 / 1;
+    grid-row: 2 / 3;
+    align-items: flex-start;
+  }
 
   @media (min-width: ${theme.breakpoints.md}) {
-    display: none;
-  }
-}
-
-@media (min-width: ${theme.breakpoints.sm}) {
-  align-items: flex-start;
-  gap: 24px;
-  flex-grow: 1;
-}
-
-@media (min-width: ${theme.breakpoints.md}) {
-  max-width: fit-content;
+    grid-column: 2 / 3;
+    grid-row: 1 / 1;
 }
 `
 
